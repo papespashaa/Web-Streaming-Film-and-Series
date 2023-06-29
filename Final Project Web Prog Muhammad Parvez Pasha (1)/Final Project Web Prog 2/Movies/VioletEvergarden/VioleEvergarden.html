@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="VioletEvergarden.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet Evergarden The Movie</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2> <span>Violet Evergarden The Movie</span> </h2>
+            <p>
+                Several years have passed since the end of The Great War. As the radio tower
+                in Leidenschaftlich continues to be built, telephones will soon become more 
+                relevant, leading to a decline in demand for "Auto Memory Dolls." Even so, 
+                Violet Evergarden continues to rise in fame after her constant success with 
+                writing letters. However, sometimes the one thing you long for is the one thing 
+                that does not appear...
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Violet Evergarden_ the Movie _ Official Trailer _ Netflix Anime.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

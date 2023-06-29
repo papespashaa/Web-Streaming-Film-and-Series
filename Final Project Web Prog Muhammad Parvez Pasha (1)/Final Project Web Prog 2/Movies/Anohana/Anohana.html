@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Anohana.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anohana</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Anohana The Flower We Saw That Day</span></h2>
+            <p>
+                In Chichibu, Saitama, a group of six sixth-grade-age childhood friends drift apart after one of them, 
+                Meiko "Menma" Honma, dies in an accident. Five years after the incident, the leader of the group, Jinta Yadomi, 
+                has withdrawn from society, does not attend high school,and lives as a recluse. One summer day, the ghost of an 
+                older-looking Menma appears beside him and asks to have a wish granted, reasoning that she cannot pass on into 
+                the afterlife until it is fulfilled. At first, he only tries to help her minimally because he thinks he is 
+                hallucinating...
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Anohana The Movie_ The Flower We Saw That Day Official US Trailer (2014) - Anime Movie HD.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

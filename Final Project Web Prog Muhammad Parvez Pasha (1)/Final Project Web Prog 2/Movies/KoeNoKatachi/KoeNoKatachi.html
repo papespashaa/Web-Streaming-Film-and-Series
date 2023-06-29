@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="KoeNoKatachi.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koe No Katachi</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../user.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Koe No Katachi</span></h2>
+            <p>
+                The movie chronicles the emotional, social, and spiritual attributes that are 
+                manifested by a group of adolescent schoolmates in elementary school, especially
+                as to how they relate to a hearing impaired girl that is introduced into their group. 
+                Each teen reacts to the newcomer in a different way, including many varied and 
+                negative reactions and outcomes. Shoya Ishida, a former delinquent bullies the deaf girl, 
+                Shoko Nishimiya, with his friends joining in. Finally, when Shoko is forced to transfer to 
+                another school after enduring a period of the most cruel bullying, all of Ishida's friends, 
+                as well as the teachers, blame him for bullying her into leaving...
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="A Silent Voice - Trailer 2018 [Eng Sub] - Koe no Katachi「聲の形」- [Fan-edit].mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
